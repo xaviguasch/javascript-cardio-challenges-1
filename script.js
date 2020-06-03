@@ -3,12 +3,13 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-  // for (let i = str.length - 1; i <= 0; i--) {
-  //   str += str[i]
-  // }
-  // return str
+  let revString = ''
+  for (let i = str.length - 1; i >= 0; i--) {
+    revString += str[i]
+  }
+  return revString
 
-  return str.split('').reverse().join('')
+  // return str.split('').reverse().join('')
 }
 
 // CHALLENGE 2: VALIDATE A PALINDROME
