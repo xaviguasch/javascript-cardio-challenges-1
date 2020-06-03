@@ -3,7 +3,11 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-  return "Let's Start"
+  for (let i = str.length - 1; i <= 0; i--) {
+    str += str[i]
+  }
+
+  return str
 }
 
 // CHALLENGE 2: VALIDATE A PALINDROME
