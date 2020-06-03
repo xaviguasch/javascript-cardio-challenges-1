@@ -8,13 +8,17 @@ function reverseString(str) {
   //   revString += str[i]
   // }
   // return revString
-
+  ////////////////////////////
   // return str.split('').reverse().join('')
-
+  ////////////////////////////
+  // let revString = ''
+  // for (const char of str) {
+  //   revString = char + revString
+  // }
+  // return revString
+  ////////////////////////////
   let revString = ''
-  for (const char of str) {
-    revString = char + revString
-  }
+  str.split('').forEach((char) => (revString = char + revString))
   return revString
 }
 
