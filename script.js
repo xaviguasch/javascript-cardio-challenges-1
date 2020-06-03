@@ -17,9 +17,13 @@ function reverseString(str) {
   // }
   // return revString
   ////////////////////////////
-  let revString = ''
-  str.split('').forEach((char) => (revString = char + revString))
-  return revString
+  // let revString = ''
+  // str.split('').forEach((char) => (revString = char + revString))
+  // return revString
+  ////////////////////////////
+  return str.split('').reduce((revString, char) => {
+    return char + revString
+  }, '')
 }
 
 // CHALLENGE 2: VALIDATE A PALINDROME
