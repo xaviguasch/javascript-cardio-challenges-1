@@ -49,7 +49,15 @@ function reverseInt(int) {
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-function capitalizeLetters(str) {}
+function capitalizeLetters(str) {
+  const strArr = str.toLowerCase().split(' ')
+  console.log(strArr)
+
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1)
+  }
+  return strArr.join(' ')
+}
 
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
@@ -68,5 +76,8 @@ function fizzBuzz() {}
 // const output = isPalindrome('hello')
 // console.log(output)
 
-const output = reverseInt(-911)
+// const output = reverseInt(-911)
+// console.log(output)
+
+const output = capitalizeLetters('i love javascript')
 console.log(output)
